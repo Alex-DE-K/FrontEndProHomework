@@ -6,7 +6,7 @@
 const theString = prompt("Please enter the number");
 const theNumber = Number(theString);
 
-for (i = 1; i < 100; i++) {
+for (let i = 1; i < 100; i++) {
     let risedNumber = Math.pow(3, i);
     if (theNumber == risedNumber) {
         resultMessage = (`We can get the Number ${theNumber} by means of raising 3 to the n-th power`);

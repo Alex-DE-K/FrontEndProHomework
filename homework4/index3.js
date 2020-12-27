@@ -5,10 +5,10 @@ const theString = prompt("Please enter the number");
 const theNumber = Number(theString);
 
 
-for (i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     const squareNumber = Math.pow(i, 2);
     if (squareNumber <= theNumber){
-            console.log(i);
+    console.log(i);
     } 
 }
 
