@@ -48,4 +48,4 @@ function showAverageMark() {
             console.log(`Average group mark: ${getAverageMarkGroup()}`);
 	}	
 
-showAverageMark(students);
+showAverageMark();
