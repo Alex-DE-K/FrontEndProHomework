@@ -27,6 +27,15 @@ function getAverageStudentMark(student) {
     return student.marks.reduce((accum, current) => accum + current,0) / student.marks.length;
 }
 
+function showStudentsAverageMark(students) {
+	for (const student of students) {
+		const resultMessageAvgMark = (`${student.name} average mark:${getAverageStudentMark(student).toFixed(0)}`);
+            console.log (resultMessageAvgMark);
+	}	
+}
+
+showStudentsAverageMark(students);
+
 function getAverageMarkGroup() {
 	const sumOfAverageMarks = students.reduce((accum, current) => {
         return accum + getAverageStudentMark(current);
@@ -35,12 +44,8 @@ function getAverageMarkGroup() {
     return averageMark;
 }
 
-function showResults(students) {
-	for (const student of students) {
-		const resultMessageAvgMark = (`${student.name} average mark:${getAverageStudentMark(student).toFixed(0)}`);
-            console.log (resultMessageAvgMark);
+function showAverageMark() {
             console.log(`Average group mark: ${getAverageMarkGroup()}`);
 	}	
-}
 
-showResults(students);
+showAverageMark(students);
